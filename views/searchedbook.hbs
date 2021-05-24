@@ -1,0 +1,85 @@
+<div class="row" style="background-color: #000000;min-height:100vh;">
+    <div class="container">
+        {{#if user}}
+
+{{#each boo}} 
+
+<div class="index" style="display:flex;justify-content:space-between;margin-top:100px;min-height:100vh;gap:20px">
+    <div class="index-left">
+
+       
+        <img style="width: 250px;height:auto;border:1px solid #ff1062;border-radius:4px" src="/book-images/{{this._id}}.jpg" alt="">
+<br> <br>
+<h6 style="color: #ff10645b;text-align:center">Book suggested by {{this.name}}</h6>
+ <br>
+  <div class="ratebook" style="text-align: center;color:white">
+         <p>rate this book</p>
+
+<p id="noted" style="color: #ff1062;"></p> <i id="thumps" style="color:#ff1062"></i>
+  </div>
+    </div>
+
+    <div class="index-right" style="max-width: 700px;">
+
+        <h4 style="color:white;text-decoration:underline;text-transform:uppercase">{{this.item.title}}</h4>
+        <div class="authorname" style="display: flex;gap:3px">
+            <h5 style="color: #ff1062;">by {{this.author}} </h5>
+        </div>
+        <h6 style="color:wheat">language:{{this.language}}</h6>
+
+        <h6 style="color:white">{{this.description}}</h6>
+        <h6 style="color:rgb(151, 144, 144)">{{this.year}}  {{this.genre}}</h6>
+
+<a href="" onclick='window.open("{{this.purchaselink}}");return false;'><h5>purchase via amazon</h5></a>
+<br>
+<p style="color: whitesmoke;">rating</p>
+<div class="overall-rating" style="color: rgba(245, 245, 245, 0.568);">
+    <i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+</div>
+<br>
+    
+  {{!-- {{#if status}} --}}
+
+         <a href="/deletebook/{{this._id}}" onclick="return confirm('Are you sure to delete this book?')"> <button class="btn btn-danger">Delete book</button></a>
+ 
+
+  {{!-- {{/if}} --}}
+    <br>
+    <br>
+    
+       
+{{!-- <p style="text-decoration: underline;">comments</p> --}}
+ 
+                
+
+
+<form action="/home/{{this._id}}" method="post">
+     <input type="text" placeholder="add a comment" name="comment">
+     <button class="btn btn-light">add</button>
+ </form>
+       
+      <ul>
+       <a href="home/{{this._id}}"><p>view other comments</p></a>
+           
+         {{#each comment}}
+
+         <p>{{this.comment}}</p>
+
+         {{/each}} 
+
+          
+      </ul>
+  
+    </div>
+</div>
+
+{{/each}}
+
+{{/if}}
+
+    </div>
+    </div>

@@ -1,0 +1,58 @@
+{{#if user}}
+
+
+<h3 style="text-align: center;margin-top:10px">Add a book</h3>
+
+<div class="row">
+    <div class="container">
+        <div class="col-md-6">
+            
+            <form action="/addbook" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+    <label >IBN number</label>
+    <input type="number" maxlength="13" class="form-control" id="exampleInputEmail2"  placeholder="Enter ibn number" name="ibn">
+  </div>
+  <div class="form-group">
+    <label>Title</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter title" name="title">
+  </div>
+  <div class="form-group">
+    <label>Author name</label>
+    <input type="text" class="form-control" placeholder="Author name" name="author">
+  </div>
+  <div class="form-group">
+    <label>Language</label>
+    <input type="text" class="form-control" placeholder="Enter language" name="language">
+  </div>
+  <div class="form-group">
+    <label>Cover image</label>
+    <input type="file" class="form-control" placeholder="Cover image" name="image">
+  </div>
+  <div class="form-group">
+    <label>Description</label>
+    <input type="text" class="form-control" placeholder="Book description" name="description">
+  </div>
+  <div class="form-group">
+    <label>Enter amazon purchase link</label>
+    <input type="text" class="form-control" placeholder="amazon purchase link" name="purchaselink">
+  </div>
+  <div class="form-group">
+    <label>Year of publication</label>
+    <input type="number" maxlength="4" class="form-control" placeholder="Enter year" name="year">
+  </div>
+  <div class="form-group">
+    <label>Genre</label>
+    <input type="text" class="form-control" placeholder="Genre" name="genre">
+  </div>
+   <div class="form-group">
+    <label>your name</label>
+    <input type="text" class="form-control" placeholder="enter your name" name="name">
+  </div>
+  <button type="submit" class="btn btn-primary">Add</button>
+</form>
+      
+
+        </div>
+    </div>
+</div>
+{{/if}}

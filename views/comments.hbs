@@ -1,0 +1,13 @@
+<div class="row mt-4" style="min-height: 100vh;background-color:black;color:#ff1062">
+<div class="container">
+<h3 style="text-decoration:underline;">Comments</h3>
+{{#if user}}
+{{#each comments}}
+
+<p>  <strong>-->  {{this.comment.comment}}   </strong>      <a href="/comment/{{this._id}}"> <i class="fas fa-trash"></i></p></a>
+
+{{/each}}
+{{/if}}
+</div>
+
+</div>
