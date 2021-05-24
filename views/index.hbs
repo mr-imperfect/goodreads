@@ -13,7 +13,7 @@
        
         <img style="width: 250px;height:auto;border:1px solid #ff1062;border-radius:4px" src="/book-images/{{this.item._id}}.jpg" alt="">
 <br> <br>
-<h6 style="color:rgb(151, 144, 144)">{{this.item.year}}  {{this.item.genre}}</h6>
+<h6 style="color:rgb(151, 144, 144);text-align:center">{{this.item.year}}  {{this.item.genre}}</h6>
 <h6 style="color: #ff10645b;text-align:center">Book suggested by {{this.item.name}}</h6>
  <br>
   <div class="ratebook" style="text-align: center;color:white">
@@ -76,7 +76,7 @@
  </form>
        
       <ul>
-       <a href="home/{{this.item._id}}"><p>view other comments</p></a>
+       <a href="home/{{this.item._id}}"><p>view comments</p></a>
            
          {{!-- {{#each comment}}
 
