@@ -1,10 +1,14 @@
-<div class="row mt-4" style="min-height: 100vh;background-color:black;color:#ff1062">
+<div class="row mt-4" style="min-height: 100vh;background-color:black;color:white">
 <div class="container">
-<h3 style="text-decoration:underline;">Comments</h3>
+<h3 style="text-decoration:underline;color:#ff1062;text-align:center;margin-top:30px;margin-bottom:50px">Comments</h3>
 {{#if user}}
 {{#each comments}}
 
-<p>  <strong>-->  {{this.comment.comment}}   </strong>      <a href="/comment/{{this._id}}"> <i class="fas fa-trash"></i></p></a>
+<div class="comments" style="border: 0.4px solid #ff1062;padding:10px;margin-bottom:15px">
+    <h6>  <strong>-->   </strong> {{this.comment.comment}} </h2>
+                    <small>  <a href="/comment/{{this._id}}" onclick="return confirm('Are you sure to delete this comment?')"> delete the comment <i class="fas fa-trash"></i></a>
+</small> 
+</div>
 
 {{/each}}
 {{/if}}
