@@ -1,4 +1,4 @@
-#  Book MATTER
+#  Book matter
 This project is a clone of https://www.goodreads.com .I used node js as backend , hbs as frontend and mongodb as database.This site helps users to read books with different genres.And also a user can add a book that will be suggested to another users and provide book purchasing link.The user can understand the quality and overview of book through comment/review section.Once if a user read a book they can post review about the book.So it will help other users to find the perfect book that they are looking for.The users can search the book they are looking for in the search bar by bookname,authorname or genre.So the result will be their searched book.
 ## Team members
 1.Vishnu Jayakumar [https://github.com/mr-imperfect]
