@@ -3,19 +3,19 @@ This project is a clone of https://www.goodreads.com .I used node js as backend 
 ## Team members
 1.Vishnu Jayakumar [https://github.com/mr-imperfect]
 
-##Team id
+##Team id:
 BFH/recbX449ioAgTOIrO/2021
 
 ##Link to product walkthrough
-[2021-05-25 18-19-02.mkv]
+[https://drive.google.com/file/d/1Bf31MrYVf47poGWhgDm7Oe2-fTsLz4MI/view]
 
-##How it Works
+##How it Works:
 Step 1:User want to signup and then login
 Step 2:Main interface get open.At there they can search books,add book.
 step 3:User can search book by book name,author name or genre of the book.The result will show all related books.
 step 4:Also user can add a book.By clicking add a book you will go to other page to suggest a book.There you want to provide the book related details like book name,author name,cover image,genre of the book etc.
 Step 5:After adding a book the book will be visible to all other users who can comment/review it. 
 
-##Libraries used
-Bootstrap-5.0.1
+##Libraries used:
+Bootstrap-5.0.1,
 fuse.js- 6.4.6
