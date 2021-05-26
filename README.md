@@ -19,3 +19,8 @@ Step 5:After adding a book the book will be visible to all other users who can c
 ##Libraries used:
 Bootstrap-5.0.1,
 fuse.js- 6.4.6
+##How to configure and run
+1.clone the repo
+2.in vscode terminal,npm install
+3.nodemon bin/www(now the server and database get connected)
+4.open a browser,search http://localhost:3000
