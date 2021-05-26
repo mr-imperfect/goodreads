@@ -23,8 +23,12 @@ name,cover image,genre of the book etc.
 Step 5:After adding a book the book will be visible to all other users who can comment/review it. 
 
 ##Libraries used:
-Bootstrap-5.0.1,
+Bootstrap-5.0.1
+
 fuse.js- 6.4.6
+
+fontawesome
+
 
 ##How to configure and run
 
