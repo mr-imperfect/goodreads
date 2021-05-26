@@ -27,6 +27,7 @@ Bootstrap-5.0.1,
 fuse.js- 6.4.6
 
 ##How to configure and run
+
 1.clone the repo
 
 2.in vscode terminal,npm install
